@@ -16,3 +16,9 @@ const toggle = () => {
   emits('update:collapse', !isCollapse.value)
 }
 </script>
+<style lang="scss" scoped>
+.el-header {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+</style>

@@ -19,7 +19,7 @@
     <el-menu-item index="3">
       <template #title>
         <el-icon><location /></el-icon>
-        <span>趋势标记</span>
+        <span>省市区选择</span>
       </template>
     </el-menu-item>
   </el-menu>

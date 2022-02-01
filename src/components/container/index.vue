@@ -5,7 +5,7 @@
         <nav-side :collapse="isCollapse">></nav-side>
       </el-scrollbar>
     </el-aside>
-    <el-container>
+    <el-container class="main">
       <nav-header v-model:collapse="isCollapse"></nav-header>
       <el-main><router-view></router-view></el-main>
     </el-container>
@@ -21,5 +21,8 @@
 .el-menu-vertical:not(.el-menu--collapse) {
   width: 200px;
   min-height: 400px;
+}
+.el-container.main {
+  flex-direction: column;
 }
 </style>
