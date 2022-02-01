@@ -5,7 +5,7 @@
     </div>
 </template>
 <script lang="ts" setup>
-import mAreaChoose from '@/components/areaChoose/index.vue'
+import mAreaChoose from '@/components/areaChoose/src/index.vue'
 type AreaItem = {
   code: string,
   name: string,
