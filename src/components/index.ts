@@ -1,10 +1,14 @@
 import {App} from 'vue'
 import mChooseIcon from "./mChooseIcon/index";
 import mAreaChoose from './areaChoose/index'
+import mNotification from './notification/index'
+import mlist from './list/index'
 
 const components = [
   mChooseIcon,
-  mAreaChoose
+  mAreaChoose,
+  mNotification,
+  mlist
 ]
 
 export default {

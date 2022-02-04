@@ -15,4 +15,8 @@ html, body,
     height: 100%;
   }
 }
+html, body, ul {
+  padding: 0;
+  margin: 0
+}
 </style>

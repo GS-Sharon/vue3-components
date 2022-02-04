@@ -14,6 +14,9 @@ const routes:RouteRecordRaw[] = [
       },{
         path: 'areaChoose',
         component: () => import('../views/areaChoose/index.vue')
+      },{
+        path: 'notification',
+        component: () => import('../views/notification/index.vue')
       }
     ]
   }
