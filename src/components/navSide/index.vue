@@ -1,32 +1,28 @@
 <template>
-  <el-menu
-    default-active="2"
-    class="el-menu-vertical"
-    :collapse="props.collapse"
-  >
-    <el-menu-item index="1">
-      <template #title>
-        <el-icon><location /></el-icon>
-        <span>首页</span>
-      </template>
-    </el-menu-item>
-    <el-menu-item index="2">
-      <template #title>
-        <el-icon><location /></el-icon>
-        <span>图标选择器</span>
-      </template>
-    </el-menu-item>
-    <el-menu-item index="3">
-      <template #title>
-        <el-icon><location /></el-icon>
-        <span>省市区选择</span>
-      </template>
-    </el-menu-item>
-  </el-menu>
+  <m-menu :data="menuData" :collapse="collapse" router></m-menu>
 </template>
 <script lang="ts" setup>
 import {defineProps} from 'vue'
 let props = defineProps<{
   collapse: boolean
 }>()
+const menuData = [
+  {
+    name: '首页',
+    icon: 'location',
+    index: '/'
+  }, {
+    name: '图标选择器',
+    icon: 'location',
+    index: '/chooseIcon'
+  }, {
+    name: '省市区选择',
+    icon: 'location',
+    index: '/areaChoose'
+  }, {
+    name: '菜单',
+    icon: 'location',
+    index: '/menu'
+  }
+]
 </script>
