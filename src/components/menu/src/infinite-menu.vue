@@ -17,8 +17,9 @@ export default defineComponent({
   setup(props, {}) {
     const createMenuItem = (data: MenuItem) => {
       if(!data.children || !data.children.length) {
+        const slots = {title: () => <span>{data.name}</span>}
         return (
-          <el-menu-item index={data.index}>
+          <el-menu-item index={data.index} v-slots={slots}>
             {
               data.icon
               ? <el-icon>
@@ -26,7 +27,6 @@ export default defineComponent({
                 </el-icon>
               : null
             }
-            <span>{data.name}</span>
           </el-menu-item>
         )
       } else {
@@ -70,3 +70,9 @@ export default defineComponent({
   }
 })
 </script>
+<style lang="scss" scoped>
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <m-menu :data="menuData" :collapse="collapse" router></m-menu>
+  <m-menu :data="menuData" :collapse="props.collapse" router></m-menu>
 </template>
 <script lang="ts" setup>
 import {defineProps} from 'vue'

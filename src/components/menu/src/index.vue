@@ -7,10 +7,10 @@
   >
     <template v-for="item in props.data" :key="item.index">
       <el-menu-item :index="item.index" v-if="!item.children || !item.children.length">
+        <el-icon v-if="!item.children || !item.children.length">
+          <component :is="item.icon"></component>
+        </el-icon>
         <template #title v-if="!item.children || !item.children.length">
-          <el-icon>
-            <component :is="item.icon"></component>
-          </el-icon>
           <span>{{item.name}}</span>
         </template>
       </el-menu-item>
@@ -48,3 +48,9 @@ const props = defineProps({
   }
 })
 </script>
+<style lang="scss" scoped>
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
+}
+</style>
