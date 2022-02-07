@@ -23,6 +23,10 @@ const menuData = [
     name: '菜单',
     icon: 'location',
     index: '/menu'
+  }, {
+    name: '城市选择',
+    icon: 'location',
+    index: '/chooseCity'
   }
 ]
 </script>
