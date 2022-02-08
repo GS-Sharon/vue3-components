@@ -27,6 +27,10 @@ const menuData = [
     name: '城市选择',
     icon: 'location',
     index: '/chooseCity'
+  }, {
+    name: '表格',
+    icon: 'location',
+    index: '/table'
   }
 ]
 </script>

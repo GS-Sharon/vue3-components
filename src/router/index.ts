@@ -23,6 +23,9 @@ const routes:RouteRecordRaw[] = [
       },{
         path: 'chooseCity',
         component: () => import('../views/chooseCity/index.vue')
+      },{
+        path: 'table',
+        component: () => import('../views/table/index.vue')
       }
     ]
   }
